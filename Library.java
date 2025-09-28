@@ -105,6 +105,8 @@ public class Library {
                     System.out.print("Search by ISBN: ");
                     String isbn = sc.nextLine();
 
+                    Book currBook = catalogService.findByIsbn(isbn);
+                    
                     System.out.print("Enter the number of increment: ");
                     int amount = sc.nextInt();
                     sc.nextLine();
